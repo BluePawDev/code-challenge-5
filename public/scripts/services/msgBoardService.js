@@ -14,7 +14,8 @@ myApp.service('MessageBoardService', function($http) {
 	// START postMsg
 	sv.postMsg = function(message) {
 		console.log('In postMsg function:', message);
-		return $http.post('/msgs', message);
+		return $http.post('/msgs', message).then(function(response) {
+			console.log('back from server');
+		});
 	}; // END postMsg
-
 }); // END MessageBoardService

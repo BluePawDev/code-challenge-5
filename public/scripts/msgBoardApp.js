@@ -12,7 +12,7 @@ myApp.controller('MessageBoardController', function(MessageBoardService) {
 			msg: vm.txtMsg
 		};
 		MessageBoardService.postMsg(message);
-		vm.dispMsgs;
+		// vm.dispMsgs;
 	};
 
 
