@@ -1,0 +1,25 @@
+{
+  "name": "code-challenge-5",
+  "version": "1.0.0",
+  "description": "code-challenge-5",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BluePawDev/code-challenge-5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BluePawDev/code-challenge-5/issues"
+  },
+  "homepage": "https://github.com/BluePawDev/code-challenge-5#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.7"
+  }
+}

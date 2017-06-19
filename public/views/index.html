@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Code Challenge: 5</title>
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/msgBoardApp.js" charset="utf-8"></script>
+    <script src="scripts/services/msgBoardService.js" charset="utf-8"></script>
+  </head>
+
+  <body ng-app="myApp" ng-controller="MessageBoardController as mb">
+    <div class="header">
+      <h1>Code Challenge: 5</h1>
+    </div>
+
+    <!-- START: Input div -->
+    <div class="inputForm">
+      <!-- START: inputForm -->
+      <p>Enter your name and message you wish to display then selelct SUBMIT!</p>
+      <form class="" action="index.html" method="post">
+        <!-- User name text -->
+        <label for="txtUserName">Name: </label>
+        <input type="text" name="txtUserName" ng-model="mb.userName"><br>
+        <!-- Message text -->
+        <label for="txtMessage">Message: </label>
+        <input type="text" name="txtMessage" ng-model="mb.txtMsg"><br>
+        <!-- Submit button -->
+        <button type="button" name="cmdSubmit" ng-click="mb.submit(mb.userName, mb.txtMsg)">SUBMIT</button>
+      </form>
+      <!-- END: inputForm -->
+    </div>
+    <!-- END: Input div -->
+
+
+
+  </body>
+
+</html>
